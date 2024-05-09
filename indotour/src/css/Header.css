@@ -1,0 +1,26 @@
+.header-box{
+    display: flex;
+    padding: 10px;
+}
+.header-logo{
+    width: 10%;
+}
+.header-main-menu{
+    width:70%;
+    text-align: center;
+
+}
+.header-icons{
+    width: 20%;
+    display: flex;
+}
+ul.main-menu{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0px;
+    padding: ma;
+    /* margin: 0px 7px; */
+    padding: 0px;
+}
