@@ -1,7 +1,29 @@
-.slides{
+.slideshow {
+    overflow: hidden;
+    position: relative;
     width: 100%;
-}
-.slides img{
-width: 100%;
-height: auto;
-}
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @keyframes slideshow {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .slides {
+    animation: slideshow 5s infinite;
+  }
+  
+  .slides:hover {
+    animation-play-state: paused;
+  }
+  
