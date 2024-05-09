@@ -1,0 +1,28 @@
+.topbar {
+  background: black;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrolling-text {
+  color: white;
+  padding: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .scrolling-text {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
